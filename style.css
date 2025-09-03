@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #36ded0 0%, #ec5288 100%);
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 28px 22px;
+    background: #fafafa;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.13);
+}
+
+h1, h2 {
+    color: #6a1b9a;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+form {
+    display: grid;
+    gap: 14px;
+}
+
+label {
+    font-size: 1rem;
+    color: #37474f;
+    margin-bottom: 4px;
+}
+
+input, select {
+    border: 2px solid #bdbdbd;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 1em;
+    background: #f3e5f5;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #7e57c2;
+    outline: none;
+}
+
+.btn-primary {
+    margin-top: 18px;
+    padding: 12px 0;
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+    background: #4527a0;
+    transform: translateY(-2px) scale(1.03);
+}
+
+.result-box {
+    margin-top: 22px;
+    background: #b2dfdb;
+    color: #263238;
+    padding: 14px;
+    border-radius: 7px;
+    display: none;
+    font-size: 1.05em;
+}
+
+.floating-help-btn {
+    display: block;
+    background: #ec407a;
+    color: #fff;
+    padding: 12px 0;
+    margin: 18px auto 0 auto;
+    width: 60%;
+    border-radius: 14px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 3px 8px rgba(236, 64, 122, 0.18);
+    transition: background 0.25s, transform 0.15s;
+}
+
+.floating-help-btn:hover {
+    background: #ad1457;
+    transform: scale(1.04);
+}
+
+.tech-doc-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    background: #ec407a;
+    color: #fff;
+    padding: 16px 22px;
+    border-radius: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(44, 62, 80, 0.22);
+    transition: background 0.25s, transform 0.15s;
+    z-index: 1200;
+}
+
+.tech-doc-btn:hover {
+    background: #ad1457;
+    transform: scale(1.12);
+}
