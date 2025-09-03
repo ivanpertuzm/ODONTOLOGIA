@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Agendar Consulta Dental</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva de Citas - Odontología</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="main-wrapper">
-        <header>
-            <h1>Clínica Dental Dientes Sanos</h1>
-            <p>Agenda tu consulta fácilmente</p>
-        </header>
+  <div class="container">
+    <h1>Centro Odontológico Sonrisa Feliz</h1>
+    <h2>Reserva tu cita en línea</h2>
 
-        <section>
-            <form id="agenda-consulta">
-                <div class="form-group">
-                    <label for="paciente">Nombre y Apellido:</label>
-                    <input type="text" id="paciente" name="paciente" autocomplete="off" required>
-                </div>
+    <form id="formulario-cita">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-                <div class="form-group">
-                    <label for="contacto">Email de contacto:</label>
-                    <input type="email" id="contacto" name="contacto" required>
-                </div>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
 
-                <div class="form-group">
-                    <label for="especialista">Especialista:</label>
-                    <select id="especialista" name="especialista" required>
-                        <option value="">Elige un especialista</option>
-                        <option>Dra. Pérez</option>
-                        <option>Dr. Gómez</option>
-                        <option>Dra. Ramírez</option>
-                    </select>
-                </div>
+      <label for="profesional">Profesional:</label>
+      <select id="profesional" name="profesional" required>
+        <option value="">Seleccione un profesional</option>
+        <option>Dra. Maria Margarita</option>
+        <option>Dr. Alejandro David</option>
+        <option>Dr. Ivan David </option>
+      </select>
 
-                <div class="form-group">
-                    <label for="dia">Día de la consulta:</label>
-                    <input type="date" id="dia" name="dia" required>
-                </div>
+      <label for="fecha">Fecha de la cita:</label>
+      <input type="date" id="fecha" name="fecha" required>
 
-                <div class="form-group">
-                    <label for="turno">Turno:</label>
-                    <select id="turno" name="turno" required>
-                        <option value="">Selecciona un turno</option>
-                        <option>07:30 AM</option>
-                        <option>08:30 AM</option>
-                        <option>10:30 AM</option>
-                        <option>12:00 PM</option>
-                        <option>01:30 PM</option>
-                        <option>04:00 PM</option>
-                    </select>
-                </div>
+      <label for="hora">Hora de la cita:</label>
+      <select id="hora" name="hora" required>
+        <option value="">Seleccione una hora</option>
+        <option>08:00 AM</option>
+        <option>09:00 AM</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>02:00 PM</option>
+        <option>03:00 PM</option>
+      </select>
 
-                <button type="submit">Agendar</button>
-            </form>
-            <div id="mensaje"></div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+      <button type="submit">Reservar Cita</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
